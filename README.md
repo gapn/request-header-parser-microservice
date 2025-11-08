@@ -17,10 +17,10 @@ A live version of this project can be viewed here: **[View Live Demo](https://yo
 This microservice has a single endpoint, `/api/whoami`, which returns a JSON object containing key information from the request header.
 
 ### Project Requirements
-* [ ] A request to `/api/whoami` returns a JSON object.
-* [ ] The JSON object contains the user's IP address in the `ipaddress` key.
-* [ ] The JSON object contains the user's preferred language in the `language` key (from the `Accept-Language` header).
-* [ ] The JSON object contains the user's software in the `software` key (from the `User-Agent` header).
+* [x] A request to `/api/whoami` returns a JSON object.
+* [x] The JSON object contains the user's IP address in the `ipaddress` key.
+* [x] The JSON object contains the user's preferred language in the `language` key (from the `Accept-Language` header).
+* [x] The JSON object contains the user's software in the `software` key (from the `User-Agent` header).
 
 ### Example Response:
 
@@ -29,8 +29,8 @@ A `GET` request to `.../api/whoami` will return a JSON object similar to this:
 ```json
 {
   "ipaddress": "127.0.0.1",
-  "language": "en-US,en;q=0.9",
-  "software": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+  "language": "en",
+  "software": "Windows NT 10.0; Win64; x64"
 }
 ```
 
